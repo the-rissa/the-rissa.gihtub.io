@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <link href="bootstrap-5.2.2-dist/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">My Page</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <h1>Contact Us</h1>
+    <form action="results.html" method="get">
+        <label for="userName">Name (Required): </label><br>
+        <input type="text" id="userName" name="userName" required>
+        <br><br>
+        <label for="userMessage">Message (Required): </label><br>
+        <textarea rows="5" cols="50" id="userMessage" name="userMessage" required>Message goes here...</textarea>
+        <br><br>
+        <label for="newsletter">Sign up for the newsletter (Optional): </label>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <br>
+        <button type="submit" id="subbutton" name="subbutton">Submit</button>
+    </form>
+    <script src="bootstrap-5.2.2-dist/js/bootstrap.js"></script>    
 </body>
 </html>
